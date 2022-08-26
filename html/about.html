@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="C:\Users\HP\source\repos\WebApplication3\wwwroot\lib\bootstrap\dist\css\bootstrap.css">
+</head>
+<script src="../js/date.js"></script>
+
+<body onload="getDate();">
+    <header>
+        <div class="htitle">
+            arab gym
+        </div>
+        <nav>
+            <ul class="navebar">
+                <li><a href="../index.html">الصفحة الرئيسية</a></li>
+                <li><a href="feed.html">التغدية</a></li>
+                <li><a href="exercises.html">تمارن مهمة</a></li>
+                <li><a href="booking.html">الحجز</a></li>
+                <li><a href="#connect">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <button class="dropbtn">تسجيل</button>
+            <div class="dropdown-content">
+                <a href="signup.html">انشاء حساب</a>
+                <a href="signin.html">تسجبل الدخول</a>
+            </div>
+        </div>
+
+    </header>
+    <div class="static">
+        <div class="search">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="time">
+            <div id="timeDate">
+                <center>
+                    <p id="tim"></p>
+                    <p id="date"></p>
+                </center>
+            </div>
+        </div>
+        <div class="navlist">
+            <button class="click"><i class="fa fa-bars"></i></button>
+            <ul>
+                <li><a href="../index.html">الصفحة الرئيسية</a></li>
+                <li><a href="feed.html">التغدية</a></li>
+                <li><a href="exercises.html">تمارن مهمة</a></li>
+                <li><a href="booking.html">الحجز</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <h1>WHO ARE WE?</h1>
+    <table>
+        <tr>
+            <td><img src="https://www.pngkit.com/png/detail/366-3669713_gym-s-olympia-gym-logo.png" alt=""></td>
+
+            <td>
+                <p id="first"><strong> ABOUT OLYMPIA GYM </strong><br>
+                    In 1974, Olmpyia Gym began the pursuit of creating the best work out experience, <br> and since then
+                    has been redefining the way people around the world get fit and healthy. <br> Through the creation
+                    of a piece of equipment so versatile it could be used for muscle building or rehabilitation, Total
+                    Gym’s revolutionary bodyweight training system set the stage for the fitness revolution that took
+                    place in the 80’s and 90’s.
+
+                    In the decades since its inception, over 5 million pieces of Total Gym equipment have changed lives
+                    around the world. From elite fitness studios and collegiate training centers, to physical therapy
+                    practices and consumer’s homes, Total Gym facilitates well over 24 million workouts a year!
+
+                    With dedicated lines for home, commercial, and physical therapy use, each piece of equipment has
+                    been painstakingly crafted to maximize space, efficiency, and most importantly, results.
+
+                    The relentless pursuit of providing the best workout experience continues to drive everything Total
+                    Gym does.
+
+                    Feel the difference with Total Gym</p>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <p id="first">
+                    <strong id="space">THE FUTURE</strong>
+                    Since the mid-1980's, Total Gym has designed and developed functional products that complement and
+                    enhance bodyweight training for all populations. With the addition of the ELEVATE line for
+                    commercial use, Total Gym is bridging the gap between selectorized equipment and functional cages on
+                    the gym floor.
+
+                    The single station units in the ELEVATE line, are a testament to Total Gym's philosophy of
+                    functional training using dynamic natural movement. This philosophy ensures that Total Gym products
+                    will always be effective for users of all shapes, sizes, ages, and fitness levels.
+
+                    As innovators in fitness, Total Gym is always on the cutting edge, bringing quality and excellence
+                    to its products and service.
+                </p>
+                <p id="add_content" style="color: #fe4665;"></p>
+                <button onclick="add()" class="btn btn-info">Click here for more info..</button>
+            </td>
+            <td>
+                <img src="https://cdn.shopify.com/s/files/1/0029/7828/3564/files/Tg-Who-We-Are_14865131-2262-412a-9b2f-cb84a33ccaa7_2000x.png?v=1534704241"
+                    alt="">
+            </td>
+        </tr>
+    </table>
+    <script src="../js/script.js"></script>
+    <footer>
+        <div class="right-footer">
+            <h2>حول</h2>
+            <p>تم تاسيس عرب جيم سنه xxxx و يهتم برفع مستوى اللياقة البدنية منذ ذلك الحين و يحتوى على مدربين ذو خبره فى
+                المجال ....</p>
+            <a class="b-color" href="html/about.html">المزيد من المعلومات</a>
+        </div>
+
+        <div class="midel-footer">
+            <div>
+                <a href="#" target="_blank" class="fa fa-facebook"></a>
+                <a href="#" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/channel/UCnCwkRya5QnBBp-P04JdJjA" target="_blank"
+                    class="fa fa-youtube"></a>
+                <a href="#" target="_blank" class="fa fa-instagram"></a>
+            </div>
+            <hr color="gold">
+            <div class="copyright">
+                <p>&copy; make by Group 2</p>
+            </div>
+        </div>
+        <div id="connect" class="left-footer">
+            <h2>معلومات التواصل</h2>
+            <dl>
+                <dt>العنوان:<a class="a-color" href="#">xxxxxxxxxxxxxxx</a></dt>
+                <dt><bdi>تليفون : </bdi>000000000000</dt>
+                <dt><bdi>الايميل:</bdi><a class="a-color" href="mailto:arabgym@gmail.com">arabgym@gmail.com</a></dt>
+                <dt>الشكوى:<a class="a-color" href="html/contactUs.html">اضغط هنا</a></dt>
+            </dl>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>GYM|Home</title>
+    <link rel="icon" href="imgs/arm-muscle.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/date.js"></script>
+    <script src="js/script.js"></script>
+    
+</head>
+
+<body onload="getDate();">
+    <header>
+        <div class="htitle">
+            Arab Gym
+        </div>
+        <nav>
+            <ul class="navebar">
+                <li><a href="#">الصفحة الرئيسية</a></li>
+                <li><a href="html/feed.html">التغدية</a></li>
+                <li><a href="html/exercises.html">تمارن مهمة</a></li>
+                <li><a href="html/booking.html">الحجز</a></li>
+                <li><a href="#connect">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <button class="dropbtn" onclick="drop1();">تسجيل</button>
+            <div class="dropdown-content" id="dc" style = "display: none;">
+                <a href="html/signup.html">انشاء حساب</a>
+                <a href="html/signin.html">تسجبل الدخول</a>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="static">
+        <div class="search">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="time">
+            <div id="timeDate">
+                <center>
+                    <p id="tim"></p>
+                    <p id="date"></p>
+                </center>
+            </div>
+        </div>
+        <div class="navlist" onclick = "drop2();">
+            <button class="click"><i class="fa fa-bars"></i></button>
+            <ul id = "u1" style="display:none;">
+                <li><a href="#">الصفحة الرئيسية</a></li>
+                <li><a href="html/feed.html">التغدية</a></li>
+                <li><a href="html/exercises.html">تمارن مهمة</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <section class="information">
+        <h2>معلومات عن الجيم</h2>
+        <p>جيم مصر يعتبر الجيم الاول والافصل في مصر
+            <br>فهو يضم افضل انواع المدربين والالات الحديثة
+            <br>وقد حصل الجيم علي كثير من الجوائز في شتي المجالات
+            <br>وهو مناسب لاي فئة من الناس سواء كان تخسيس او تضخيم
+            <br>او تنشيف او ملاكمة او فتنس او اي حاجة يعني
+        </p>
+    </section>
+    <section class="video1">
+        <video controls width="1280px" height="720px" poster="imgs/56465126.jpg">
+            <source src="videos/000.mp4" type="video/mp4">
+            Your Browser Does Not Support Video Tags
+        </video>
+    </section>
+    <section class="names"><i class="fa-regular fa-clock"></i>
+        مواعيد العمل</section>
+    <section>
+        <table id="table">
+            <tr>
+                <th>Days
+                </th>
+                <th>time</th>
+            </tr>
+            <tr>
+                <td>السبت</td>
+                <td>من 8 ص الى 10 م</td>
+            </tr>
+            <tr>
+                <td>الاحد</td>
+                <td>من 8 ص الى 10 م</td>
+            </tr>
+            <tr>
+                <td>الاثنين</td>
+                <td>من 8 ص الى 10 م</td>
+            </tr>
+            <tr>
+                <td>الثاثاء</td>
+                <td>من 8 ص الى 10 م</td>
+            </tr>
+            <tr>
+                <td>الاربعاء</td>
+                <td>من 8 ص الى 10 م</td>
+            </tr>
+            <tr>
+                <td>الخميس</td>
+                <td>من 8 ص الى 10 م</td>
+            </tr>
+            <tr>
+                <td>الجمعة</td>
+                <td>من 1 الى 6</td>
+            </tr>
+        </table> <br>
+    </section>
+    <section class="names"><i class="fa-solid fa-dumbbell"></i>
+        المدربين الجامدين
+    </section>
+    <section class="trainers">
+        <div>
+            <h2>انفورما</h2>
+            <img id="m" src="imgs/010.jpg" alt="" width="278px" height="200px" onclick="show()">
+            <p id="s">هو مصارع محترف ترك المصارعة للعمل في جيم العرب</p>
+        </div>
+        <div>
+            <h2>رامي عادل</h2>
+            <img id="m2" src="imgs/011.jpg" alt="" width="278px" height="200px"  onclick="show2()">
+            <p id="s2">نجم مشهور في عالم الكوميك بس احسنلك متضحكش علي الكوميك دي قدامه</p>
+        </div>
+        <div>
+            <h2>ميدو باور
+
+            </h2>
+            <img id="m3" src="imgs/012.jpg" alt="" width="278px" height="200px" onclick="show3()">
+            <p id="s3">فادي عضلات نجم اليوتيوب المعروف مدرب الان في جيم العرب</p>
+        </div>
+    </section>
+    <section class="names"><i class="fa-solid fa-video"></i>
+       الفديوهات
+    </section>
+    <section class="project">
+        <div class="content">
+            <div class="project-card">
+                <div class="project-imag">
+                    <video controls poster="imgs/295295965.jpg">
+                        <source src="videos/003.mp4" type="video/mp4">
+                        Your Browser Does Not Support Video Tags
+                    </video>
+                </div>
+                <div class="project-info">
+                    <p>cheast& bay& tray & all you need ya broo</p>
+                    <strong class="strong">
+                        <span>gym</span>
+                        <a href="#">read more</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <video controls poster="imgs/295295965.jpg">
+                        <source src="videos/002.mp4" type="video/mp4">
+                        Your Browser Does Not Support Video Tags
+                    </video>
+                </div>
+                <div class="project-info">
+                    <p>cheast& bay& tray & all you need ya broo</p>
+                    <strong class="strong">
+                        <span>gym</span>
+                        <a href="#">read more</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <video controls poster="imgs/295295965.jpg">
+                        <source src="videos/001.mp4" type="video/mp4">
+                        Your Browser Does Not Support Video Tags
+                    </video>
+                </div>
+                <div class="project-info">
+                    <p>cheast& bay& tray & all you need ya broo</p>
+                    <strong class="strong">
+                        <span>gym</span>
+                        <a href="#">read more</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="right-footer">
+            <h2>حول</h2>
+            <p>تم تاسيس عرب جيم سنه xxxx و يهتم برفع مستوى اللياقة البدنية منذ ذلك الحين و يحتوى على مدربين ذو خبره فى
+                المجال ....</p>
+            <a class="b-color" href="html/about.html">المزيد من المعلومات</a>
+        </div>
+
+        <div class="midel-footer">
+            <div>
+                <a href="#" target="_blank" class="fa fa-facebook"></a>
+                <a href="#" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/channel/UCnCwkRya5QnBBp-P04JdJjA" target="_blank"
+                    class="fa fa-youtube"></a>
+                <a href="#" target="_blank" class="fa fa-instagram"></a>
+            </div>
+            <hr color="gold">
+            <div class="copyright">
+                <p>&copy; make by Group 2</p>
+            </div>
+        </div>
+        <div id="connect" class="left-footer">
+            <h2>معلومات التواصل</h2>
+            <dl>
+                <dt>العنوان:<a class="a-color" href="#">xxxxxxxxxxxxxxx</a></dt>
+                <dt><bdi>تليفون : </bdi>000000000000</dt>
+                <dt><bdi>الايميل:</bdi><a class="a-color" href="mailto:arabgym@gmail.com">arabgym@gmail.com</a></dt>
+                <dt>الشكوى:<a class="a-color" href="html/contactUs.html">اضغط هنا</a></dt>
+            </dl>
+        </div>
+    </footer>
+</body>
+
+</html>

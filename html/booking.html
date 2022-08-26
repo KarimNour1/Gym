@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GYM|sign-in</title>
+    <link rel="icon" href="../imgs/arm-muscle.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="htitle">
+            arab gym
+        </div>
+        <nav>
+            <ul class="navebar">
+                <li><a href="../index.html">الصفحة الرئيسية</a></li>
+                <li><a href="feed.html">التغدية</a></li>
+                <li><a href="exercises.html">تمارن مهمة</a></li>
+                <li><a href="#connect">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <button class="dropbtn">تسجيل</button>
+            <div class="dropdown-content">
+                <a href="signup.html">انشاء حساب</a>
+                <a href="#">تسجبل الدخول</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="sign-in">
+        <h1>الحجز</h1>
+        <form method="post">
+            <div>
+                <label class="textcol" for="name">الاسم</label>
+                <br>
+                <input class="input-box" id="name" type="text" required placeholder="الاسم">
+                <br>
+                <label class="textcol" for="email">البريد الالكترونى</label>
+                <br>
+                <input class="input-box" id="email" type="email" required placeholder="البريد الالكترونى">
+                <br>
+                <label class="textcol" for="phone">رقم الهاتف</label>
+                <br>
+                <input class="input-box" id="phone" type="text" required placeholder="رقم الهاتف" minlength="11"
+                    maxlength="11">
+                <br>
+                <label class="textcol" for="membership">رقم العضوية</label>
+                <br>
+                <input class="input-box" id="membership" type="text" required placeholder="رقم العضوية">
+            </div>
+            <h2>التدريب</h2>
+            <div class="training">
+                <label>
+                    <input type="radio" name="training" id="tra1">
+                    <label class="col2" for="tra1">tr1</label>
+                </label>
+                <label>
+                    <input type="radio" name="training" id="tra2">
+                    <label class="col2" for="tra2">tr2</label>
+                </label>
+                <label>
+                    <input type="radio" name="training" id="tra3">
+                    <label class="col2" for="tra3">tr3</label>
+                </label>
+                <label>
+                    <input type="radio" name="training" id="tra4">
+                    <label class="col2" for="tra4">tr4</label>
+                </label>
+
+            </div>
+            <h2>الايام</h2>
+            <div class="days">
+                <div>
+                    <label class="ch">
+                        <input type="checkbox" name="day" id="sa">
+                        <span class="checkbox"></span>
+                    </label>
+                    <label class="col2" for="sa">السبت</label>
+                </div>
+                <div>
+                    <label class="ch">
+                        <input type="checkbox" name="day" id="su">
+                        <span class="checkbox"></span>
+                    </label>
+                    <label class="col2" for="su">الاحد</label>
+                </div>
+                <div>
+                    <label class="ch">
+                        <input type="checkbox" name="day" id="mo">
+                        <span class="checkbox"></span>
+                    </label>
+                    <label class="col2" for="mo">الاثنين</label>
+                </div>
+                <div>
+                    <label class="ch">
+                        <input type="checkbox" name="day" id="tu">
+                        <span class="checkbox"></span>
+                    </label>
+                    <label class="col2" for="tu">الثلاثاء</label>
+                </div>
+                <div>
+                    <label class="ch">
+                        <input type="checkbox" name="day" id="we">
+                        <span class="checkbox"></span>
+                    </label>
+                    <label class="col2" for="we">الاربعاء</label>
+                </div>
+                <div>
+                    <label class="ch">
+                        <input type="checkbox" name="day" id="th">
+                        <span class="checkbox"></span>
+                    </label>
+                    <label class="col2" for="th">الخميس</label>
+                </div>
+                <div>
+                    <label class="ch">
+                        <input type="checkbox" name="day" id="fr">
+                        <span class="checkbox"></span>
+                    </label>
+                    <label class="col2" for="fr">الجمعة</label>
+                </div>
+            </div>
+            <input id="but-in" class="input-box" type="submit" value="ارسال">
+        </form>
+    </section>
+
+    <footer>
+        <div class="right-footer">
+            <h2>حول</h2>
+            <p>تم تاسيس عرب جيم سنه xxxx و يهتم برفع مستوى اللياقة البدنية منذ ذلك الحين و يحتوى على مدربين ذو خبره فى
+                المجال ....</p>
+            <a class="b-color" href="html/about.html">المزيد من المعلومات</a>
+        </div>
+
+        <div class="midel-footer">
+            <div>
+                <a href="#" target="_blank" class="fa fa-facebook"></a>
+                <a href="#" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/channel/UCnCwkRya5QnBBp-P04JdJjA" target="_blank"
+                    class="fa fa-youtube"></a>
+                <a href="#" target="_blank" class="fa fa-instagram"></a>
+            </div>
+            <hr color="gold">
+            <div class="copyright">
+                <p>&copy; make by Group 2</p>
+            </div>
+        </div>
+        <div id="connect" class="left-footer">
+            <h2>معلومات التواصل</h2>
+            <dl>
+                <dt>العنوان:<a class="a-color" href="#">xxxxxxxxxxxxxxx</a></dt>
+                <dt><bdi>تليفون : </bdi>000000000000</dt>
+                <dt><bdi>الايميل:</bdi><a class="a-color" href="mailto:arabgym@gmail.com">arabgym@gmail.com</a></dt>
+                <dt>الشكوى:<a class="a-color" href="html/contactUs.html">اضغط هنا</a></dt>
+            </dl>
+        </div>
+    </footer>
+</body>
+
+</html>
